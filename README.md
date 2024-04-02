@@ -18,9 +18,9 @@ Software – Quartus prime
 
 Full adder is a digital circuit used to calculate the sum of three binary bits. It consists of three inputs and two outputs. Two of the input variables, denoted by A and B, represent the two significant bits to be added. The third input, Cin, represents the carry from the previous lower significant position. Two outputs are necessary because the arithmetic sum of three binary digits ranges in value from 0 to 3, and binary 2 or 3 needs two digits. The two outputs are sum and carry.
 
-Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin 
+                 Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin 
 
-Carry = AB + ACin + BCin
+                 Carry = AB + ACin + BCin
 
 ![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/0f30ba51-5ffb-4198-845f-18e054f675e7)
 
@@ -44,14 +44,14 @@ Write the detailed procedure here
 
 **Program:**
 
-module fulladdsub(a,b,cin,sum,carry,BO,DIFF);
-input a,b,cin;
-output sum,carry,BO,DIFF;
-assign sum = (a ^ b ^ cin);
-assign cout = (a & b) | (b & cin) | (a & cin);
-assign DIFF = a ^ b ^ cin;
-assign BO =  (a & b) | ((a ^ b) & cin);
-endmodule
+                            module fulladdsub(a,b,cin,sum,carry,BO,DIFF);
+                            input a,b,cin;
+                            output sum,carry,BO,DIFF;
+                            assign sum = (a ^ b ^ cin);
+                            assign cout = (a & b) | (b & cin) | (a & cin);
+                            assign DIFF = a ^ b ^ cin;
+                            assign BO =  (a & b) | ((a ^ b) & cin);
+                            endmodule
 
 
 **Output**
