@@ -36,14 +36,19 @@ Diff = A ⊕ B ⊕ Bin
 
 Borrow out = A'Bin + A'B + BBin
 
-**Truthtable**
-
 **Procedure**
 
-Write the detailed procedure here
-
+ 1.Type the program in Quartus software.
+ 2. Compile and run the program.
+ 3. Generate the RTL schematic and save the logic diagram.
+ 4. Create nodes for inputs and outputs to generate the timing diagram.
+ 5. For different input combinations generate the timing diagram
+ 
 **Program:**
 
+                            #Developed by: SADHANA SHREE B
+                            #Register Number: 212223230177
+                            
                             module fulladdsub(a,b,cin,sum,carry,BO,DIFF);
                             input a,b,cin;
                             output sum,carry,BO,DIFF;
